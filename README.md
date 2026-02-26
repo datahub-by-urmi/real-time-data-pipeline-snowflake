@@ -6,4 +6,4 @@ This repository will contain the implementation of a real-time data pipeline usi
 
 ## Architecture Diagram
 
-![Architecture Diagram](https://github.com/datahub-by-urmi/real-time-data-pipeline-snowflake/blob/main/architecture_dia.png)
+![Architecture Diagram](https://github.com/datahub-by-urmi/real-time-data-pipeline-snowflake/blob/main/snowflake_datapipeline_architecture_dia.png)
