@@ -22,6 +22,9 @@ Deployed JupyterLab, Apache NiFi, and ZooKeeper using **Docker Compose** on an *
 
 ### 3. Apache NiFi
 
+![Apache NiFi Workflow](nifi_workflow.png)
+
+
 Built an ingestion workflow using three processors:
 
 - **ListFile**: Detects new CSV files.
