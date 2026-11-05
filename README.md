@@ -22,9 +22,6 @@ Deployed JupyterLab, Apache NiFi, and ZooKeeper using **Docker Compose** on an *
 
 ### 3. Apache NiFi
 
-![Apache NiFi Workflow](nifi_workflow.png)
-
-
 Built an ingestion workflow using three processors:
 
 - **ListFile**: Detects new CSV files.
@@ -32,6 +29,11 @@ Built an ingestion workflow using three processors:
 - **FetchFile**: Retrieves file contents.
 
 - **PutS3Object**: Uploads files to Amazon S3.
+  
+
+**Apache NiFi Workflow — CSV File Ingestion**: Screenshot showing a CSV file being processed through the NiFi workflow and transferred to Amazon S3.
+
+![Apache NiFi Workflow](nifi_workflow.png)
 
 ### 4. Amazon S3
 
@@ -44,6 +46,8 @@ Used as the **intermediate storage layer** between Apache NiFi and Snowflake.
 Configured Snowflake as the **cloud data warehouse**, using an **external stage and Snowpipe** to automate CSV ingestion from Amazon S3 into the CUSTOMER_RAW table.
 
 Created customer and history tables along with a **Snowflake Stream** to prepare for downstream **SCD Type 1 and Type 2 processing**.
+
+Validated the ingestion pipeline by querying **50,000 customer records successfully loaded** into **Snowflake's CUSTOMER_RAW table**.
 
 ## Challenges Faced
 
