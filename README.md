@@ -62,11 +62,11 @@ Created customer and history tables along with a Snowflake Stream to prepare for
 
 ## Future Improvements
 
-- SCD Type 1: Update customer records without preserving historical values.
+- **SCD Type 1:** Update customer records without preserving historical values.
 
-- SCD Type 2: Maintain historical customer records using effective timestamps.
+- **SCD Type 2:** Maintain historical customer records using effective timestamps.
 
-- Snowflake Tasks: Automate downstream transformations and change processing.
+- **Snowflake Tasks:** Automate downstream transformations and change processing.
 
 ## Project Status
 
